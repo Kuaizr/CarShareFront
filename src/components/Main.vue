@@ -4,7 +4,7 @@
       <div class="C-area">
         选择区域<br>
         <select>
-          <option value ="volvo">Volvo</option>
+          <option value ="volvo">成都市金牛区</option>
           <option value ="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
@@ -13,7 +13,7 @@
       <div class="C-way">
         选择道路<br>
         <select>
-          <option value ="volvo">Volvo</option>
+          <option value ="volvo">二环高架路</option>
           <option value ="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
@@ -22,7 +22,7 @@
       <div class="C-date">
         选择日期<br>
         <select>
-          <option value ="volvo">Volvo</option>
+          <option value ="volvo">2016-11-1</option>
           <option value ="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
@@ -31,7 +31,7 @@
       <div class="C-time">
         选择时间<br>
         <select>
-          <option value ="volvo">Volvo</option>
+          <option value ="volvo">9：00</option>
           <option value ="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
@@ -82,10 +82,9 @@
     <div class="bdiv figure1">
       <div class="figtitle">危险驾驶行为区域热力图
         <select class="s-map">
-          <option value ="volvo">Volvo</option>
-          <option value ="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+          <option value ="volvo">超速</option>
+          <option value ="saab">急加(减)速</option>
+          <option value="opel">相对危险</option>
       </select>
       </div>
       <Hotmap></Hotmap>

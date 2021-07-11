@@ -42,6 +42,42 @@
       <div class="bdiv tag">
         道路情况
       </div>
+      <div class="car">
+        <div class="imgwrapper">
+          <img src="../assets/img/car.png" alt="">
+        </div>
+        <div class="ba">
+          <span style="margin-left:40px;color:#fff;font-size:14px;">道路等级</span><br>
+          <span style="margin-left:40px;color:#ffff40;font-size:14px;">干道</span>
+        </div>
+      </div>
+      <div class="cave">
+        <div class="imgwrapper">
+          <img src="../assets/img/cave.png" alt="">
+        </div>
+        <div class="ba">
+          <span style="margin-left:40px;color:#fff;font-size:14px;">隧道</span><br>
+          <span style="margin-left:40px;color:#fe5968;font-size:14px;">否</span>
+        </div>
+      </div>
+      <div class="qiao">
+        <div class="imgwrapper">
+          <img src="../assets/img/qiao.png" alt="">
+        </div>
+        <div class="ba">
+          <span style="margin-left:40px;color:#fff;font-size:14px;">桥梁</span><br>
+          <span style="margin-left:40px;color:#f6c846;font-size:14px;">是</span>
+        </div>
+      </div>
+      <div class="cloud">
+        <div class="imgwrapper">
+          <img src="../assets/img/cloud.png" alt="">
+        </div>
+        <div class="ba">
+          <span style="margin-left:40px;color:#fff;font-size:14px;">天气</span><br>
+          <span style="margin-left:40px;color:#46be3e;font-size:14px;">多云</span>
+        </div>
+      </div>
     </div>
     <div class="bdiv figure1">
       <div class="figtitle">危险驾驶行为区域热力图
@@ -359,5 +395,21 @@ export default {
     right: 10px;
     top: 570px;
   }
-
+  .imgwrapper{
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    background-color: blue;
+    margin-left: 50px;
+    margin-bottom: -20px;
+    z-index: 999;
+  }
+  .ba{
+    position: relative;
+    left: 150px;
+    top: -20px;
+    height: 40px;
+    width: 190px;
+    background-image: url('../assets/img/ba.png');
+  }
 </style>

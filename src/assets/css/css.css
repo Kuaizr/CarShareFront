@@ -1,0 +1,14 @@
+.bdiv{
+  border: 1px solid rgb(106, 106, 245);
+  background: linear-gradient(to left, rgb(0, 137, 255), rgb(0 ,137, 255)) left top no-repeat, 
+              linear-gradient(to bottom, rgb(0 ,137, 255), rgb(0 ,137, 255)) left top no-repeat, 
+              linear-gradient(to left, rgb(0 ,137, 255), rgb(0 ,137, 255)) right top no-repeat,
+              linear-gradient(to bottom, rgb(0 ,137, 255), rgb(0 ,137, 255)) right top no-repeat, 
+              linear-gradient(to left, rgb(0 ,137, 255), rgb(0 ,137, 255)) left bottom no-repeat,
+              linear-gradient(to bottom, rgb(0 ,137, 255), rgb(0 ,137, 255)) left bottom no-repeat,
+              linear-gradient(to left, rgb(0 ,137, 255), rgb(0 ,137, 255)) right bottom no-repeat,
+              linear-gradient(to left, rgb(0 ,137, 255), rgb(0 ,137, 255)) right bottom no-repeat;
+  /*设置大小*/
+   background-size: 3px 40px, 40px 3px, 3px 40px, 40px 3px,3px 40px, 40px 3px, 3px 40px, 40px 3px;
+   /* background-color: rgb(8 ,20 , 83); */
+}

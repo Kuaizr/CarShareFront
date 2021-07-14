@@ -35,7 +35,6 @@ export default {
                n = Math.floor(n / 10) 
            }
            for(let i = 0; i < temp.length; i++){
-               console.log(i+1)
                if(i && i % 3 == 0){
                    res.push(",")
                }
@@ -67,7 +66,7 @@ export default {
       display: inline-block;
       width: 45px;
       height: 95px;
-      background-color: blue;
+      background-color: #0388fd;
       font-size: 80px;
       color: aliceblue;
       margin-left: 5px;

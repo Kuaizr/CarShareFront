@@ -1,21 +1,13 @@
 # carsharefront
 
-> internet+
+首先保证有node环境，命令行输入 node -v 和 npm -v 需要显示相关信息
 
-## Build Setup
+cd xx/xx/carsharefront (进入项目根目录)
 
-``` bash
-# install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
+项目运行成功
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

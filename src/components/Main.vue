@@ -4,37 +4,41 @@
       <div class="C-area">
         选择区域<br>
         <select>
-          <option value ="volvo">成都市金牛区</option>
-          <option value ="saab">Saab</option>
+          <option value ="1">成都市金牛区</option>
+          <!-- 这下面增加选项 -->
+          <!-- <option value ="saab">Saab</option>
           <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+          <option value="audi">Audi</option> -->
       </select>
       </div>
       <div class="C-way">
         选择道路<br>
         <select>
-          <option value ="volvo">二环高架路</option>
-          <option value ="saab">Saab</option>
+          <option value ="1">二环高架路</option>
+          <!-- 这下面增加选项 -->
+          <!-- <option value ="saab">Saab</option>
           <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+          <option value="audi">Audi</option> -->
       </select>
       </div>
       <div class="C-date">
         选择日期<br>
         <select>
-          <option value ="volvo">2016-11-1</option>
-          <option value ="saab">Saab</option>
+          <option value ="1">2016-11-1</option>
+          <!-- 这下面增加选项 -->
+          <!-- <option value ="saab">Saab</option>
           <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+          <option value="audi">Audi</option> -->
       </select>
       </div>
       <div class="C-time">
         选择时间<br>
         <select>
-          <option value ="volvo">9：00</option>
-          <option value ="saab">Saab</option>
+          <option value ="1">9：00</option>
+          <!-- 这下面增加选项 -->
+          <!-- <option value ="saab">Saab</option>
           <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+          <option value="audi">Audi</option> -->
       </select>
       </div>
     </div>
@@ -81,13 +85,13 @@
     </div>
     <div class="bdiv figure1">
       <div class="figtitle">危险驾驶行为区域热力图
-        <select class="s-map">
-          <option value ="volvo">超速</option>
-          <option value ="saab">急加(减)速</option>
-          <option value="opel">相对危险</option>
+        <select class="s-map" v-model="val">
+          <option value ="1">超速</option>
+          <option value ="2">急加(减)速</option>
+          <option value="3">相对危险</option>
       </select>
       </div>
-      <Hotmap></Hotmap>
+      <Hotmap :val="value"></Hotmap>
     </div>
     <div class="bdiv figure2">
       <div class="figtitle">成都市24小时危险驾驶次数</div>
@@ -122,6 +126,9 @@ export default {
   },
   data () {
     return {
+      val:1,
+      value:1,
+      points:[],
       num:5346,
       areas: ['No.1\n\n金牛区','No.2\n\n成华区','No.3\n\n青羊区','No.4\n\n锦江区'],
       scores: [[44,30,22,6]],
@@ -280,6 +287,18 @@ export default {
         }
       }
     }
+  },
+  watch:{
+      val(val,oldval){
+        console.log(val)
+        if(val == 1){
+          this.value = 1
+        }else if(val == 2){
+          this.value = 2
+        }else{
+          this.value = 3
+        }
+      }
   }
 }
 </script>
@@ -398,7 +417,7 @@ export default {
     text-align: center;
     width: 100px;
     height: 60px;
-    background-color: blue;
+    background-color: #0738c9;
     margin-left: 50px;
     margin-bottom: -20px;
     z-index: 999;

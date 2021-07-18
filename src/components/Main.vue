@@ -5,40 +5,85 @@
         选择区域<br>
         <select>
           <option value ="1">成都市金牛区</option>
-          <!-- 这下面增加选项 -->
-          <!-- <option value ="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option> -->
+          <option value ="2">成都市成化区</option>
+          <option value="3">成都市青羊区</option>
+          <option value="4">成都市锦江区</option>
       </select>
       </div>
       <div class="C-way">
         选择道路<br>
         <select>
           <option value ="1">二环高架路</option>
-          <!-- 这下面增加选项 -->
-          <!-- <option value ="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option> -->
+          <option value="">凤凰山高架路</option>
+          <option value="">新泉路</option>
+          <option value="">北大街</option>
+          <option value="">新华大道江汉路</option>
+          <option value="">西北桥河边街</option>
+          <option value="">人民北路</option>
+          <option value="">府河桥西路</option>
+          <option value="">八里桥路</option>
+          <option value="">福祥街</option>
+          <option value="">交桂二巷</option>
+          <option value="">凤凰山高架</option>
+          <option value="">花径路</option>
+          <option value="">站西桥东巷</option>
+          <option value="">顺沙巷</option>
+          <option value="">吉祥街</option>
+          <option value="">公交专用道</option>
+          <option value="">中同仁路</option>
+          <option value="">金仙桥路</option>
+          <option value="">新华大道沙湾路</option>
+          <option value="">金荣巷</option>
+          <option value="">树蓓巷</option>
+          <option value="">西安北路</option>
+          <option value="">万和路</option>
+          <option value="">马鞍北路</option>
+          <option value="">新村河边街</option>
+          <option value="">为民路</option>
+          <option value="">站前路</option>
+          <option value="">站西桥西巷</option>
+          <option value="">双耀二路</option>
+          <option value="">圃园南一路</option>
+          <option value="">西青路</option>
+          <option value="">荆竹坝西街</option>
+          <option value="">中环路金府路段</option>
+          <option value="">星汉路</option>
+          <option value="">沙洲街</option>
+          <option value="">曲水路</option>
+          <option value="">赛云台东二路</option>
       </select>
       </div>
       <div class="C-date">
         选择日期<br>
-        <select>
-          <option value ="1">2016-11-1</option>
-          <!-- 这下面增加选项 -->
-          <!-- <option value ="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option> -->
-      </select>
+        <input class="select" type="date" id="txtDate" />
       </div>
       <div class="C-time">
         选择时间<br>
         <select>
-          <option value ="1">9：00</option>
-          <!-- 这下面增加选项 -->
-          <!-- <option value ="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option> -->
+          <option value="0">0：00</option>
+          <option value="1">1：00</option>
+          <option value="2">2：00</option>
+          <option value="3">3：00</option>
+          <option value="4">4：00</option>
+          <option value="5">5：00</option>
+          <option value="6">6：00</option>
+          <option value="7">7：00</option>
+          <option value="8">8：00</option>
+          <option value="9">9：00</option>
+          <option value="10">10：00</option>
+          <option value="11">11：00</option>
+          <option value="12">12：00</option>
+          <option value="13">13：00</option>
+          <option value="14">14：00</option>
+          <option value="15">15：00</option>
+          <option value="16">16：00</option>
+          <option value="17">17：00</option>
+          <option value="18">18：00</option>
+          <option value="19">19：00</option>
+          <option value="20">20：00</option>
+          <option value="21">21：00</option>
+          <option value="22">22：00</option>
+          <option value="23">23：00</option>
       </select>
       </div>
     </div>
@@ -143,6 +188,9 @@ export default {
         },
         yAxis: {
             type: 'value',
+            min: 0,
+			      max: 70,
+			      interval: 10,
             splitLine:{
         　　　　show:false
         　　},
@@ -394,6 +442,11 @@ export default {
     top: -52px;
     color: aliceblue;
     font-size: 24px;
+  }
+  .select{
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
   }
   select{
     width: 130px;

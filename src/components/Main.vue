@@ -169,6 +169,9 @@ export default {
     Hotmap,
     Count
   },
+  created(){
+    this.randomNums()
+  },
   data () {
     return {
       val:1,
@@ -336,9 +339,16 @@ export default {
       }
     }
   },
+  methods:{
+    randomNums(){
+      setInterval(() => {
+        let newnum = Math.ceil(Math.random()*1500) + 5000
+        this.num = newnum
+      }, 2000);
+    }
+  },
   watch:{
       val(val,oldval){
-        console.log(val)
         if(val == 1){
           this.value = 1
         }else if(val == 2){

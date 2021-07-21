@@ -50,6 +50,11 @@ export default {
            }
        }
    },
+   watch:{
+       num(newnum,oldnum){
+           this.getChild()
+       }
+   }
 }
 </script>
 <style scoped>
